@@ -1,0 +1,77 @@
+/* Write your CSS! */
+
+$bright: #fff;
+$dark: #000;
+
+$circle: 50px;
+$fontsize: 30px;
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: $dark;
+  color: $bright;
+  font-size: $fontsize;
+}
+
+.space {
+	border: 1px solid $bright;
+	padding: 20px;
+	position: absolute;
+	opacity: 0.9;
+	@include transition(all 0.8s);
+
+	&.active {
+		background-color: $bright;
+		color: $dark;
+	}
+}
+
+.zone {
+	width: 20%;
+	height: 400px;
+	bottom: 20%;
+}
+
+#s-1 {
+	left: 5%;
+	text-align: center;
+}
+#s-2 {
+	left: 33%;
+	text-align: left;
+}
+#s-3 {
+	right: 33%;
+	text-align: right;
+}
+#s-4 {
+	right: 5%;
+	text-align: center;
+}
+
+.mem {
+	width: $circle;
+	height: $circle;
+	text-align: center;
+	border-radius: $circle;
+}
+
+#s-a {
+	left: 50%;
+	top: 10%;
+}
+#s-b {
+	left: 70%;
+	top: 10%;
+}
+#s-c {
+	left: 90%;
+	top: 10%;
+}
+#s-d { 
+	left: 70%;
+	bottom: 5%;
+}
